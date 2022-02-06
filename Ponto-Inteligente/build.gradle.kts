@@ -28,6 +28,9 @@ dependencies {
 	testImplementation("de.flapdoodle.embed:de.flapdoodle.embed.mongo")
 	testImplementation("io.projectreactor:reactor-test")
 	testImplementation("org.springframework.security:spring-security-test")
+	testImplementation ("org.junit.jupiter:junit-jupiter-api:5.8.1")
+	testRuntimeOnly ("org.junit.jupiter:junit-jupiter-engine:5.8.1")
+	testImplementation ("org.assertj:assertj-core:3.8.0")
 }
 
 tasks.withType<KotlinCompile> {
